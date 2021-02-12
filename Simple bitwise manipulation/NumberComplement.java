@@ -1,4 +1,5 @@
-
+ // convert int to String --> String.valueOf(insert a int)
+// convert String to int --> Integer.parseInt(insert a string)
 public class NumberComplement {
 	public static void main(String[] args) {
 		System.out.println("Solution 1");

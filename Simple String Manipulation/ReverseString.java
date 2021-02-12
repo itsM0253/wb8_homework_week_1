@@ -8,6 +8,12 @@ public class ReverseString {
 		
 		System.out.println(Arrays.toString(s));
 		
+		// Another solution using StringBuilder
+		StringBuilder sb = new StringBuilder();
+		for(char c: s) {
+			sb.append(c);
+		}
+		System.out.println(sb.reverse().toString());
 	}
 	
 	public static void reverseString(char[] s) {
