@@ -9,7 +9,8 @@ public class ReverseWords576 {
 	}
 	
 	public static String reverseWords(String str) {
-		String[] words = str.split(" ");
+		String[] words = str.split(" "); // created a string array based on spaces
+		// grabbing each word and reversing it using a StringBuilder while doing it inPlace
 		for(int i = 0; i < words.length; i++) {
 			String word = words[i];
 			words[i] =  new StringBuilder(word).reverse().toString() + " "; // reversing word by word inPlace
