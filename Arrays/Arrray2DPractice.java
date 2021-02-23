@@ -8,7 +8,7 @@ public class Arrray2DPractice {
 		
 		for(int i = 0; i < arr.length; i++) { // row
 			for(int j = 0; j < arr.length; j++) { // column
-				System.out.println(arr[i][j]);
+				System.out.print(arr[i][j] + " " + " ");
 			}
 		}
 
