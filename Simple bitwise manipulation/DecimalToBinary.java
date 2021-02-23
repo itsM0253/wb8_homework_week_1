@@ -3,7 +3,7 @@
 public class DecimalToBinary {
 	
 	public static void main(String[] args) {
-		int num = 5; 
+		int num = 10; 
 		String result = "";
 		
 		// you want it to stop at ZERO
