@@ -2,7 +2,7 @@
 public class ValidPalindrome {
 
 	public static void main(String[] args) {
-		String s = "race a car";
+		String s = "mom";
 		boolean answer = validPalindrome1(s); // supposed to be false
 		System.out.println(answer);
 
@@ -13,7 +13,7 @@ public class ValidPalindrome {
 		str = str.replaceAll("\\s",""); // strings are immutable so you have to reassign garbage collector
 		int i = 0;
 		int j = str.length() -1;
-		boolean result = true;
+		
 		while(i < j) {
 			// Taking care of edge cases, I only can compare characters or numbers
 			Character c1 = str.charAt(i);
@@ -26,12 +26,12 @@ public class ValidPalindrome {
 			}
 			// comparing 2 characters 
 			if(i < j && Character.toLowerCase(c1) != Character.toLowerCase(c2)) {
-				result = false;
+				return false;
 			}
 			i++;
 			j--;
 		}
-		return result;
+		return true;
 	}
 	
 	// solution 2
@@ -39,9 +39,9 @@ public class ValidPalindrome {
 		StringBuilder sb = new StringBuilder(); // StringBuilder is mutable 
 
 		for (char c : s.toCharArray()) // traversing through the string by characters
-			if (Character.isLetter(c) || Character.isDigit(c))
+			if (Character.isLetter(c) || Character.isDigit(c)) {
 				sb.append(c);
-
+			}
 		String original = sb.toString().toLowerCase(); // Original string
 		String reversed = sb.reverse().toString().toLowerCase(); // reversed string
 

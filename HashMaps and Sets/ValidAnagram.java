@@ -19,7 +19,7 @@ public class ValidAnagram {
 		}
 		// iterating through the first word
 		for(int i = 0; i < s.length(); i++) {
-			letters[s.charAt(i) - 'a']++; 
+			letters[s.charAt(i) - 'a']++;  // ZERO based index -> a ASCII value is 97  so, a's = 0 index and store that into the array
 		}
 		// iterating through the 2nd word
 		for(int i = 0; i < t.length(); i++) {

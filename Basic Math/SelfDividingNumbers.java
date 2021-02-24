@@ -35,14 +35,17 @@ public class SelfDividingNumbers {
 	        // otherwise if we pass the selfDivide checks, return true
 	        
 	        int temp = num;
+	        System.out.println(temp);
 	        while(temp != 0) {
 	            int lastDigit = temp % 10; // popping off last value
+	            System.out.println(lastDigit);
 	            
 	            // These are the 2 cases it is not a self dividing number 
 	            if(lastDigit == 0 || num % lastDigit != 0) { // example: 128 % 8 = 0
 	                return false;
 	            }
 	            temp = temp / 10;
+	            System.out.println(temp);
 	        }
 	        return true;
 	    }

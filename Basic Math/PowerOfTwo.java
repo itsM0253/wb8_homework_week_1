@@ -17,6 +17,7 @@ public class PowerOfTwo {
 					return true;
 				}	
 			}
+			// else if you check all the cases outside the forloop return false
 			return false;
 	  }
 	

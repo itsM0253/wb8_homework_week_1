@@ -9,7 +9,7 @@ public class SelectionSort {
 	      System.out.println(Arrays.toString(arr));
 	   }
 	   
-	   // Rearranges the elements of a into sorted order using
+	   // Rearranges the elements of a into sorted order using -> MIN to FRONT
 	   // the selection sort algorithm.
 	   public static void selectionSort(int[] a) {
 		   int count = 0;
