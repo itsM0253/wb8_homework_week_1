@@ -8,8 +8,8 @@ public class IndexOfPractice {
 		
 		System.out.println("Found Index :" + x.indexOf('a'));
 		System.out.println("Found Index :" + x.indexOf('a',4)); // Find letter a starting from index 4
-		System.out.println("Found Index :" + x.indexOf(y));
-		System.out.println("Found Index :" + x.indexOf(z)); // if two string are equal indexOf will return 0
+		System.out.println("Found Index :" + x.indexOf(y)); // if two string are equal indexOf will return 0
+		System.out.println("Found Index :" + x.indexOf(z)); 
 	}
 
 }
