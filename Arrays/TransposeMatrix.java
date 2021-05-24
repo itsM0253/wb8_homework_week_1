@@ -10,7 +10,6 @@ public class TransposeMatrix {
 		System.out.println(Arrays.deepToString(arr));
 
 	}
-	
 	public static int[][] transpose(int[][] a) {
 		int rows = a.length; // the arrays length is how many elements TOTAL in the array
 		System.out.println(rows);
